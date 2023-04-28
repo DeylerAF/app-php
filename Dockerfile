@@ -35,7 +35,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 # Clone the repository into the container's /var/www/html directory
-RUN git clone https://github.com/DeylerAF/app-php.git /var/www/html
+#RUN git clone https://github.com/DeylerAF/app-php.git /var/www/html
+
+# Copy the application files to the container's /var/www/html directory
+COPY /app /var/www/html
 
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html

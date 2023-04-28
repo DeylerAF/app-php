@@ -41,7 +41,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: app/Dockerfile # Use the specified Dockerfile for building the image
+      dockerfile: Dockerfile # Use the specified Dockerfile for building the image
     restart: always # Always restart the container if it stops
     volumes:
       - app:/var/www/html # Mount the volume to share the code
