@@ -38,7 +38,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 #RUN git clone https://github.com/DeylerAF/app-php.git /var/www/html
 
 # Copy the application files to the container's /var/www/html directory
-COPY /app /var/www/html
+COPY /src /var/www/html
 
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
