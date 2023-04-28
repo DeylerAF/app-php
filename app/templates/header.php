@@ -1,5 +1,5 @@
-<?php 
-$url_base="http://localhost:8080/app";
+<?php
+$url_base = "http://localhost:8080/app";
 ?>
 
 <!doctype html>
@@ -16,14 +16,14 @@ $url_base="http://localhost:8080/app";
 
 </head>
 
-<body>
+<body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand navbar-light bg-light">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link active" href="#" aria-current="page">System <span class="visually-hidden">(current)</span></a>
-                <a class="nav-item nav-link" href="<?php echo $url_base?>/sections/employees">Employees</a>
-                <a class="nav-item nav-link" href="<?php echo $url_base?>/sections/positions">Positions</a>
-                <a class="nav-item nav-link" href="<?php echo $url_base?>/sections/users">Users</a>
+                <a class="nav-item nav-link" href="<?php echo $url_base ?>/sections/employees">Employees</a>
+                <a class="nav-item nav-link" href="<?php echo $url_base ?>/sections/positions">Positions</a>
+                <a class="nav-item nav-link" href="<?php echo $url_base ?>/sections/users">Users</a>
                 <a class="nav-item nav-link" href="#">Log Out</a>
             </div>
         </nav>
